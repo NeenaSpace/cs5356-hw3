@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet My Dog - Yeye!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meet My Dog, Yeye!</h1>
+        <nav>
+            <ul>
+                <li class="about-ref"><a href="#about">About Me</a></li>
+                <li class="about-ref"><a href="#Gallery">My Photo Gallery</a></li>
+                <li class="about-ref"><a href="#Daily Routine">My Daily Routine in One Day</a></li>
+                <li class="about-ref"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img class="about-img"  src="assets/Screenshot 2025-02-20 at 13.36.48.png" alt="Profile Picture">
+        <p>This is Yeye, a passionate and warm Samoyed</p>
+    </section>
+
+    <section id="Gallery">
+        <h2>My Photo Gallery</h2>
+
+        <div class="photo-gallery">
+            <img src="assets/Screenshot 2025-02-20 at 13.37.14.png" alt="Photo 1">
+            <img src="assets/Screenshot 2025-02-20 at 13.36.34.png" alt="Photo 2">
+            <img src="assets/IMG_9272.JPG" alt="Photo 3">
+            <img src="assets/Screenshot 2025-02-20 at 13.36.15.png" alt="Photo 4">
+        </div>
+    </section>
+
+    <section id="Daily Routine">
+        <h2>My Daily Routine in One Day</h2>
+        <ul>
+            <li class="routine">8:00am - Get up. </li>
+            <li class="routine">9:00am - Have a little walk.</li>
+            <li class="routine">10:00am - Having my brunch.</li>
+            <li class="routine">1:00pm - Playing with my Dad.</li>
+            <li class="routine">4:00pm - Go to the dog park! My Best time!</li>
+            <li class="routine">6:00pm - Enjoying my dinner.</li>
+            <li class="routine">10:00pm - Go to sleep.</li>
+        </ul>
+    </section>
+
+    <section id="vets">
+        <h2>Veterinary Clinics in New York</h2>
+        <button id="fetch-vets">Find Nearby Vets</button>
+        <div id="vet-list"></div>
+        <!-- pop up details -->
+        <dialog id="vet-dialog">
+            <div id="vet-dialog-content"></div>
+            <button id="close-dialog">Close</button>
+        </dialog>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>nw364@cornell.edu</p>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 Yeye</p>
+    </footer>
+
+</body>
+</html>
+
+<script src="script.js"></script>

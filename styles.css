@@ -1,0 +1,122 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Style of the images in about section */
+.about-img {
+    width: 100%; /* Ensures it adjusts with the section width */
+    max-width: 300px; /* Adjust to control size */
+    height: auto; /* Keeps aspect ratio */
+    display: block;
+    margin: 10px auto; /* Centers the image */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Style of the ul */
+nav ul {
+    list-style: none; /* Removes default bullet points */
+    padding: 0; /* Removes default padding */
+}
+
+/* Style of the lists in ul */
+nav ul li {
+    margin-bottom: 10px; /* Adds spacing between items */
+}
+
+/* Style of the about words */
+.about-ref a{
+    font-size: 0.9em;
+    color: white;
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    background-color: lightblue; /* Test if CSS is applying */
+    padding: 10px 0; /* Adds padding above and below */
+}
+
+/* photos in gallery section style */
+.photo-gallery img {
+    width: 100%;
+    height: 280px; 
+    object-fit: cover; 
+    margin: 10px 0; 
+}
+
+.photo-gallery img:first-child,
+.photo-gallery img:last-child {
+    padding-left: 10px; 
+    padding-right: 10px; 
+}
+
+.routine {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Interesting font */
+    font-size: 20px; /* Larger words */
+    color: #ff6347; /* Wanderful color */
+    margin: 20px 0; /* More margin */
+    list-style: none; /* No bullet point */
+}
+
+#vet-list {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+.vet-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.vet-item:last-child {
+    border-bottom: none;
+}
+
+dialog {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px); 
+}
+
+#close-dialog {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
